@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Comic Neue', cursive;
+}
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.flexbox {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: center;
+}
+.bluebox {
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    border: 2px solid black;
+}
+</style>
+
+<body>
+    <h1>Welcome!</h1>
+    <div class="row">
+        <div class="flexbox">
+            {% for x in range(0,num) %}
+            <div class="bluebox" style="background-color: {{color}};"></div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
